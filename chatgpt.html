@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT完全ガイド | Tech Atlas</title>
+  <style>
+    :root{--bg:#f7f7f4;--ink:#111317;--muted:#68707b;--line:#e4e2dc;--accent:#ff4d2e;--blue:#00a5ff;--panel:#fff;--shadow:0 18px 55px rgba(17,19,23,.09)}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Noto Sans JP",sans-serif;line-height:1.9;letter-spacing:0}
+    a{color:inherit;text-decoration:none}.site-header{position:sticky;top:0;z-index:10;border-bottom:1px solid rgba(17,19,23,.1);background:rgba(247,247,244,.88);backdrop-filter:blur(16px)}
+    .nav{width:min(1060px,calc(100% - 32px));min-height:70px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:950}.mark{width:34px;height:34px;display:grid;place-items:center;border:2px solid var(--ink);background:var(--accent);box-shadow:4px 4px 0 var(--ink)}.menu{display:flex;gap:8px;font-size:13px;font-weight:850}.menu a{padding:8px 11px;border-radius:999px}.menu a:hover{background:#fff;box-shadow:0 0 0 1px var(--ink) inset}
+    main{width:min(1060px,calc(100% - 32px));margin:34px auto 0}.breadcrumb{color:var(--muted);font-size:13px;font-weight:800}.breadcrumb a{text-decoration:underline;text-underline-offset:3px}
+    .article-hero{margin-top:18px;border:1px solid var(--ink);border-radius:8px;background:#fff;box-shadow:var(--shadow);overflow:hidden}.visual{height:280px;background:radial-gradient(circle at 22% 25%,#fff 0 8%,transparent 9%),linear-gradient(135deg,#111317,#3457ff 52%,#68e1fd);position:relative}.visual:after{content:"";position:absolute;inset:46px;border:1px solid rgba(255,255,255,.42);background:linear-gradient(90deg,rgba(255,255,255,.22) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.22) 1px,transparent 1px);background-size:26px 26px;transform:skewX(-8deg)}
+    .hero-body{padding:clamp(24px,5vw,54px)}.label{display:inline-flex;padding:7px 10px;border:1px solid var(--ink);border-radius:999px;background:#fff5c7;font-size:12px;font-weight:950;line-height:1}h1{margin:20px 0 14px;font-size:clamp(36px,6vw,68px);line-height:1.05;letter-spacing:0} .lead{max-width:760px;margin:0;color:#343a43;font-size:18px;font-weight:650}.meta{margin-top:22px;color:var(--muted);font-size:13px;font-weight:800}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:28px;margin-top:34px}.article{border:1px solid rgba(17,19,23,.15);border-radius:8px;background:#fff;padding:clamp(22px,4vw,44px)}.article h2{margin:36px 0 12px;font-size:29px;line-height:1.25;letter-spacing:0}.article h2:first-child{margin-top:0}.article p{margin:0 0 18px;color:#252b33;font-size:16px}.point{margin:28px 0;padding:20px;border:1px solid var(--ink);border-radius:8px;background:#f7fbff;box-shadow:6px 6px 0 rgba(0,165,255,.16)}.point strong{display:block;margin-bottom:8px}.summary{margin-top:34px;padding:22px;border-radius:8px;background:#111317;color:#fff}.summary h2{margin-top:0;color:#fff}.summary p{color:rgba(255,255,255,.78)}
+    .side{position:sticky;top:94px;height:max-content}.side-box{border:1px solid var(--ink);border-radius:8px;background:#fff;padding:18px}.side-box h2{margin:0 0 12px;font-size:16px}.side-box a{display:block;padding:11px 0;border-top:1px solid var(--line);font-size:14px;font-weight:850}.side-box a:hover{color:var(--accent)}footer{margin-top:70px;padding:34px 0;border-top:1px solid var(--ink);color:var(--muted);font-size:13px;font-weight:800}
+    @media(max-width:800px){.nav{align-items:flex-start;flex-direction:column;padding:14px 0}.menu{overflow:auto;width:100%;padding-bottom:4px}.layout{grid-template-columns:1fr}.side{position:static}.visual{height:220px}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><nav class="nav"><a class="brand" href="index.html"><span class="mark">TA</span><span>Tech Atlas</span></a><div class="menu"><a href="index.html#featured">注目</a><a href="gemini.html">Gemini</a><a href="claude.html">Claude</a><a href="nvidia.html">NVIDIA</a></div></nav></header>
+  <main>
+    <div class="breadcrumb"><a href="index.html">ホーム</a> / AI / ChatGPT完全ガイド</div>
+    <section class="article-hero"><div class="visual"></div><div class="hero-body"><span class="label">AI GUIDE</span><h1>ChatGPT完全ガイド</h1><p class="lead">ChatGPTは、質問に答えるだけの道具ではありません。文章を考える、学習を助ける、アイデアを整理する、作業の下書きを作る。うまく使えば、毎日の調べものや仕事の速度を大きく変えるAIです。</p><div class="meta">Tech Atlas編集部 / 読了目安 7分</div></div></section>
+    <div class="layout">
+      <article class="article">
+        <h2>ChatGPTとは</h2>
+        <p>ChatGPTは、OpenAIが提供する対話型の生成AIです。人が入力した文章を読み取り、それに合わせて自然な文章を返します。検索エンジンのようにリンク一覧を出すだけでなく、「この内容を中学生向けに説明して」「メール文に直して」「表にまとめて」といった頼み方ができます。</p>
+        <p>大事なのは、ChatGPTを「正解を必ず出す先生」ではなく「一緒に考える編集者」と見ることです。質問の仕方があいまいなら答えもぼんやりします。目的、条件、読み手、文字数、避けたい表現を伝えるほど、返ってくる文章は使いやすくなります。</p>
+        <div class="point"><strong>ポイント</strong>ChatGPTは答えを丸暗記するための道具ではなく、考えを整理するための道具です。最後の確認は必ず人間が行う、という姿勢が安全です。</div>
+        <h2>何に使えるのか</h2>
+        <p>代表的な使い道は、文章作成、要約、翻訳、学習サポート、企画出し、コードの相談です。たとえば読みにくい説明文を短くしたり、長い資料の要点を箇条書きにしたり、英語のメールを自然な日本語に直したりできます。学校の勉強なら、歴史の流れを物語のように説明してもらう、数学の解き方を段階ごとに確認する、といった使い方が向いています。</p>
+        <p>仕事では、会議メモの整理、SNS投稿案、問い合わせ返信、プレゼンの構成づくりに役立ちます。ただし、会社の機密情報や個人情報をそのまま入れるのは避けるべきです。便利さと安全性はセットで考える必要があります。</p>
+        <h2>上手な頼み方</h2>
+        <p>コツは「役割」「目的」「条件」を入れることです。たとえば「あなたは初心者向けの編集者です。中学生にもわかる言葉で、生成AIの注意点を600字で説明してください。専門用語には短い説明をつけてください」と頼むと、かなり方向が定まります。</p>
+        <p>一度で完璧な答えを求めるより、「もっと短く」「例を増やして」「表にして」「反対意見も入れて」と会話しながら整えるほうが強いです。ChatGPTは下書き作りが得意なので、最初の一歩を軽くする使い方がよく合います。</p>
+        <h2>注意点</h2>
+        <p>ChatGPTはもっともらしい間違いを書くことがあります。日付、法律、医療、価格、仕様、ニュースのように変わりやすい情報は、公式サイトや信頼できる情報源で確認しましょう。また、AIが作った文章をそのまま提出すると、自分の理解が残らないことがあります。勉強では答えを写すより、説明を聞いて自分の言葉で言い直す使い方がおすすめです。</p>
+        <div class="summary"><h2>まとめ</h2><p>ChatGPTは、文章と思考の作業台です。調べる、まとめる、言い換える、発想する作業を助けてくれます。ただし、正確性の確認と個人情報の扱いは人間の役割です。うまく使うコツは、目的をはっきり伝え、返ってきた答えを自分で編集することです。</p></div>
+      </article>
+      <aside class="side"><div class="side-box"><h2>関連記事</h2><a href="gemini.html">Gemini完全ガイド</a><a href="claude.html">Claude完全ガイド</a><a href="nvidia.html">NVIDIAとは何者なのか</a><a href="index.html">トップへ戻る</a></div></aside>
+    </div>
+    <footer>© 2026 Tech Atlas</footer>
+  </main>
+</body>
+</html>
